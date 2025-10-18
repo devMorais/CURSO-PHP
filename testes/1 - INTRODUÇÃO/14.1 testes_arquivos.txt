@@ -1,0 +1,43 @@
+A programação orientada a objetos (POO) é um paradigma de programação que organiza o código em objetos, que são unidades de software que contêm dados (atributos) e métodos (funções) que operam nesses dados. O PHP suporta POO, permitindo a criação de classes, objetos, herança, encapsulamento, polimorfismo e outros conceitos relacionados. 
+Conceitos Fundamentais da POO em PHP:
+Classes: Modelos para a criação de objetos. Definem a estrutura e o comportamento dos objetos. 
+Objetos: Instâncias de classes. São entidades concretas que possuem os atributos e métodos definidos pela classe. 
+Atributos: Variáveis dentro de uma classe que armazenam dados sobre um objeto. 
+Métodos: Funções dentro de uma classe que definem o comportamento do objeto. 
+Encapsulamento: Agrupamento de dados e métodos relacionados em uma classe, protegendo os dados internos do objeto e controlando o acesso a eles através de métodos públicos (getters e setters). 
+Herança: Permite que uma classe (classe filha) herde atributos e métodos de outra classe (classe pai), promovendo a reutilização de código e a criação de hierarquias de classes. 
+Polimorfismo: Permite que objetos de classes diferentes respondam de maneira diferente a uma mesma mensagem (método). 
+Vantagens da POO em PHP:
+Reutilização de código:
+A herança e a composição facilitam a reutilização de código, evitando a duplicação e economizando tempo de desenvolvimento. 
+Manutenibilidade:
+A estrutura modular e organizada da POO torna o código mais fácil de entender, manter e depurar. 
+Escalabilidade:
+A POO permite construir aplicações complexas de forma modular e organizada, facilitando o crescimento e a evolução do projeto. 
+Abstração:
+A abstração permite ocultar detalhes de implementação, tornando o código mais fácil de usar e entender. 
+Organização:
+A POO ajuda a organizar o código em classes e objetos, representando o mundo real de forma mais natural. 
+Exemplo simples de POO em PHP:
+Código
+
+<?php
+class Carro {
+  public $marca;
+  public $modelo;
+
+  public function __construct($marca, $modelo) {
+    $this->marca = $marca;
+    $this->modelo = $modelo;
+  }
+
+  public function exibirDetalhes() {
+    echo "Marca: " . $this->marca . ", Modelo: " . $this->modelo . "\n";
+  }
+}
+
+$meuCarro = new Carro("Toyota", "Corolla");
+$meuCarro->exibirDetalhes();
+?>
+Neste exemplo, a classe Carro define atributos como marca e modelo, e um método exibirDetalhes. Um objeto meuCarro é instanciado com valores específicos e seu método é chamado. 
+Em resumo, a programação orientada a objetos é um paradigma poderoso e amplamente utilizado no desenvolvimento web com PHP, oferecendo vantagens como reutilização de código, manutenibilidade e escalabilidade. 
